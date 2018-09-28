@@ -10,14 +10,11 @@
             <input pattern="$Text">
                 <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
                 <var name="UserName" value="$Text" scope="user"/>
-                <output value="Nice to meet you, $UserName! what do you want?"/> <!-- Using the placeholder in output -->
+                <output value="Nice to meet you, $UserName!"/> <!-- Using the placeholder in output -->
             </input>
-           
         </context>
-        
     </input>
     
-     
             <input pattern="(si) *">
                 <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
                 <output value="pelito no hay delito"/> <!-- Using the placeholder in output -->
