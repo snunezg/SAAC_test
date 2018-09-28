@@ -1,5 +1,9 @@
 <context>
-    <input pattern="(hi|hello) *">
+    <pattern name="Pagos" value="(pagar*|pago*|importe*|debo*)"/> <!-- A general pattern -->
+    <pattern name="Saludos" value="(hola*|buenas*|mba'eichapa*|mba'eteko*)"/> <!-- A general pattern -->
+    <pattern name="Condiciones" value="(cuando*|cuanto*|donde*|en que*)"/> <!-- A general pattern -->
+
+    <input pattern="(hi|hello) * $Saludos">
         <!-- Greet the user if we know his/her name -->
         <output value="Hello $UserName!" if="full($UserName)"/>
 
@@ -15,8 +19,8 @@
         </context>
     </input>
     
-            <input pattern="(si) *">
-                <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
-                <output value="pelito no hay delito"/> <!-- Using the placeholder in output -->
-            </input>
+    <input pattern="(quiero *|sabes *) * $Condiciones $Pagos">
+        <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
+        <output value="voy a verificarlo un momento"/> <!-- Using the placeholder in output -->
+    </input>
 </context>
