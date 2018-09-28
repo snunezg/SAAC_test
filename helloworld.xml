@@ -19,7 +19,7 @@
         </context>
     </input>
     
-    <input pattern="(quiero|sabes) * $Condiciones $Pagos">
+    <input pattern="(quiero|sabes) * $Condiciones * $Pagos *">
         <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
         <output value="voy a verificarlo un momento"/> <!-- Using the placeholder in output -->
     </input>
