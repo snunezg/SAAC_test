@@ -3,7 +3,7 @@
     <pattern name="Saludos" value="(hola*|buenas*|mba'eichapa*|mba'eteko*)"/> <!-- A general pattern -->
     <pattern name="Condiciones" value="(cuando*|cuanto*|donde*|en que*)"/> <!-- A general pattern -->
 
-    <input pattern="(hi|hello) *">
+    <input pattern="(hi|hello|$Saludos) *">
         <!-- Greet the user if we know his/her name -->
         <output value="Hello $UserName!" if="full($UserName)"/>
 
