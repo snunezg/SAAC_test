@@ -40,7 +40,6 @@
           <!-- Does some weather gathering stuff -->
         </context>
       </input>
-    </context>
 
 
 </context> <!-- main context end -->
