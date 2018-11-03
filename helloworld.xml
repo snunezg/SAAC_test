@@ -24,7 +24,7 @@
         <output value="voy a verificarlo un momento"/> <!-- Using the placeholder in output -->
     </input>
     
-    <context>
+    
         
     <input pattern="* (weather|forecast) * [$Date] *">
 
