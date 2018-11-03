@@ -23,4 +23,24 @@
         <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
         <output value="voy a verificarlo un momento"/> <!-- Using the placeholder in output -->
     </input>
-</context>
+    
+    <context>
+        
+    <input pattern="* (weather|forecast) * [$Date] *">
+
+        <!-- If we don’t know where is our user from, we need to ask about that -->
+        <context if="empty($UserCity)">
+          <output value="Where are you from?"/>
+          <input pattern="$City">
+            <context id="weather"/> <!-- Jump to the "weather" context now -->
+          </input>
+        </context>
+
+        <context id="weather">
+          <!-- Does some weather gathering stuff -->
+        </context>
+      </input>
+    </context>
+
+
+</context> <!-- main context end -->
