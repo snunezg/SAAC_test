@@ -1,8 +1,10 @@
 <context>
     <pattern name="Pagos" value="(pagar*|pago*|importe*|debo*)"/> <!-- A general pattern -->
     <pattern name="Saludos" value="(hola*|buenas*|mba'eichapa*|mba'eteko*)"/> <!-- A general pattern -->
+    <pattern name="Despedida" value="(chau*|adios*|hasta luego*|nos vemos*)"/> <!-- A general pattern -->
     <pattern name="Condiciones" value="(cuando*|cuanto*|donde*|en que*)"/> <!-- A general pattern -->
     <pattern name="City" value="(asuncion|limpio|sajonia|lambare)"/> <!-- ciudad -->
+    
 
     <input pattern="(hi|hello|$Saludos) *">
         <!-- Greet the user if we know his/her name -->
@@ -39,4 +41,13 @@
         <output value="Hmm parece que va llover"/> 
       </context>
     </input>
+    
+    <input pattern="* ($Despedida) *">
+        <output>
+            <item>Hasta luego!</item>
+            <item>Bye!</item>
+            <item>ahi nos vemos!</item>
+        </output>
+    </input>
+    
 </context> <!-- main context end -->
