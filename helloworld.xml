@@ -36,6 +36,7 @@
 
       <context id="weather">
         <!-- Does some weather gathering stuff -->
+        <output value="Hmm parece que va llover"/> 
       </context>
     </input>
 </context> <!-- main context end -->
