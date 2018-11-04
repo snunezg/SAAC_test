@@ -42,6 +42,12 @@
       </context>
     </input>
     
+    <input id="testInput">
+        <pattern value="(test1|test2|test3)"/>
+        <pattern value="(test4|test4|test6)"/>
+        <output value="veo que estas haciendo el test input"/> 
+    </input>
+    
     <input pattern="* ($Despedida) *">
         <output>
             <item>Hasta luego!</item>
