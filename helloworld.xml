@@ -61,6 +61,18 @@
     </input>    
     
     
+    <input pattern="get* (weather|forecast)">
+      <get url="http://api.openweathermap.org/data/2.5/weather" var="Weather">
+        <param name="APPID" value="API_KEY"/>
+        <param name="units" value="metric"/>
+        <param name="lat" value="$UserLatitude"/>
+        <param name="lon" value="$UserLongitude"/>
+      </get>
+    
+      <output value='get("temp", get("main", $Weather))'/>
+    </input>
+    
+    
     <input pattern="* ($Despedida) *">
         <output>
             <item>Hasta luego!</item>
