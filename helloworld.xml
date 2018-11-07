@@ -48,6 +48,19 @@
         <output value="veo que estas haciendo el test input"/> 
     </input>
     
+    
+    <input pattern="* remind [me] [to] {$Text $Date $Time}">
+      <!-- Here Text, Date and Time variables with context scope are available -->
+      <output value="I will remind you $Text $Date at $Time"/>
+      <!-- So we can reference these vars by name -->
+      <var name="NoteText" value="$Text"/>
+      <var name="NoteDate" value="$Date"/>
+      <var name="NoteTime" value="$Time"/>
+      <var name="Note" value="$Text $Date $Time"/> <!-- Clue all together -->
+      <output value="nota: $Note"/>
+    </input>    
+    
+    
     <input pattern="* ($Despedida) *">
         <output>
             <item>Hasta luego!</item>
