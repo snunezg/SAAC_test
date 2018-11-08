@@ -1,13 +1,13 @@
 <context>
     <pattern name="Saludos" value="(hola*|buenas*|mba'eichapa*|mba'eteko*)"/> <!-- A general pattern -->
     
-    <input pattern="(hi|hello|$Saludos) *" lan="es">
+    <input pattern="(hi|hello|$Saludos) *" lang="es">
         <!-- Greet the user if we know his/her name -->
-        <output value="hola $UserName!" if="full($UserName)" lan="es"/>
+        <output value="hola $UserName!" if="full($UserName)" lang="es"/>
 
         <!-- Or activate an inner context to ask the user about his/her name -->
         <context if="empty($UserName)" modal="true"> <!-- We use a modal context, so our bot will recognize any text as the user’s name -->
-            <output value="Hola! como te llamas?" lan="es" />
+            <output value="Hola! como te llamas?" lang="es" />
 
             <input pattern="$Text">
                 <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
