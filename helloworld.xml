@@ -2,7 +2,7 @@
     <pattern name="Pagos" value="(pagar*|pago*|importe*|debo*)"/> <!-- A general pattern -->
     <!--<pattern name="Saludos" value="(hola*|buenas*|mba'eichapa*|mba'eteko*)"/>  A general pattern -->
     <pattern name="Despedida" value="(chau*|adios*|hasta luego*|nos vemos*|bye*|bai*)"/> <!-- A general pattern -->
-    <pattern name="Condiciones" value="(cuando*|cuanto*|donde*|en que*)"/> <!-- A general pattern -->
+    <pattern name="Condiciones" value="(cuando*|cuanto*|donde*|en que*|a que*)"/> <!-- A general pattern -->
     <pattern name="City" value="(asuncion|limpio|sajonia|lambare)"/> <!-- ciudad -->
 
     <input pattern="(quiero|sabes) * $Condiciones * $Pagos *">
