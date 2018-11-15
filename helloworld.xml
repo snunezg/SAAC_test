@@ -55,7 +55,7 @@
       <output value='get("temp", get("main", $Weather))'/>
     </input>
     
-   <input pattern="*$Condiciones * hora * entro {$Text $Date $Time}">
+   <input pattern="*$Condiciones * hora * entro [hoy]*">
         <output value="Tu horario de entrada es a las 18:15 PM $UserName" if="full($UserName)"/>
         <output value="Veo que tu horario de entrada es a las 18:15 PM" />
     </input>
