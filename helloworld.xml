@@ -12,7 +12,7 @@
             <item>Virtual</item>
         </sample>
         <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
-        <!--<output value="Actualmente contamos con un curso de inglés, básico y avanzado"/> <!-- Using the placeholder in output -->
+        <!--<output value="Actualmente contamos con un curso de inglés, básico y avanzado"/> Using the placeholder in output -->
     </input>
    
     <input pattern="(quiero|sabes) * $Condiciones * $Pagos *">
