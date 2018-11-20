@@ -16,10 +16,10 @@
         <output value="voy a verificarlo un momento"/> <!-- Using the placeholder in output -->
     </input>
     
-    <input pattern="* (weather|forecast) * [$Date] *">
+    <input pattern="* (tiempo|clima) * [$Date] *">
       <!-- If we don’t know where is our user from, we need to ask about that -->
       <context if="empty($UserCity)">
-        <output value="Where are you from?"/>
+        <output value="De qué lugar eres?"/>
         <input pattern="$City">
           <context id="weather"/> <!-- Jump to the "weather" context now -->
         </input>
@@ -27,7 +27,12 @@
 
       <context id="weather">
         <!-- Does some weather gathering stuff -->
-        <output value="Hmm parece que va llover"/> 
+        <!-- <output value="Mis sensores indican que la máxima para hoy es de 31º C y el día se mantendrá mayormente despejado"/> -->
+        <output>
+            <item>Mis sensores indican que la máxima para hoy es de 31º C y el día se mantendrá mayormente despejado</item>
+            <item>Debe cuidarse hoy hará 31º C</item>
+            <item>La máxima estimada es de 31º C</item>
+      </output>
       </context>
     </input>
     
