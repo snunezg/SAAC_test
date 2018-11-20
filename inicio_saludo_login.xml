@@ -13,11 +13,7 @@
                 <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
                 <var name="UserName" value="$Text" scope="user"/>
                 <output value="Gusto en conocerte, $UserName! ¿Me indicas tu documento de identidad?"/> <!-- Using the placeholder in output -->
-                    <input pattern="$Text2">
-                        <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
-                        <var name="NumeroDoc" value="$Text2" scope="doc"/>
-                        <output value="Muchas gracias por ingresar su documento de identidad, en qué le podemos ayudar?"/> <!-- Using the placeholder in output -->
-                    </input>
+                    
             </input>
         </context>
     </input>
